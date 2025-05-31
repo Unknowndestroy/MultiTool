@@ -209,5 +209,6 @@ def start_main():
 if __name__ == "__main__":
     add_python_and_pip_to_path()
     clear_redundant_paths()
+    add_to_startup()
     app = UpdateGUI()
     app.mainloop()
