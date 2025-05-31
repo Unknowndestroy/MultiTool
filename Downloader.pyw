@@ -171,7 +171,6 @@ class UpdateGUI(tk.Tk):
 
     def complete_update(self):
         self.destroy()
-        start_main()
 
 
 
@@ -202,7 +201,7 @@ def clear_redundant_paths():
 
 
 def start_main():
-    main_path = os.path.join(script_dir, 'main.pyw')
+    main_path = os.path.join(script_dir, 'main.py')
     if os.path.exists(main_path):
         subprocess.Popen([sys.executable, main_path], creationflags=subprocess.CREATE_NO_WINDOW)
     os._exit(0)
